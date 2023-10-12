@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Register</title>
+<style>
+.body
+{
+	height: 100px;
+	padding: 0;
+	margin: 0;
+}
+
+.signUpContainer
+{
+	background-color: #efefee;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.column
+{
+	background-color: #fff;
+	height: 300px;
+	width: 450px;
+	padding: 20px 40px;
+}
+
+.column form
+{
+	display:flex;	
+	flex-direction: column;
+}
+
+.column form input[type="text"],
+.column form input[type="password"]
+{
+	font-size: 14px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 1px solid #dedede;
+}
+
+.column .header
+{
+	padding: -40px;
+	font-size: 24px;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    }
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+    </style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <nav>
+        <ul>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+	<div class="signUpContainer">
+		<div class="column">
+			<div class="header">
+				<h2 style="color:blue;">Notes Portal</h2>
+				<h3 style="color:green;">Register<h3>
+			</div>
+			<form method="POST">
+				<input type="text" name="username" id="username" placeholder="Username" required>
+				<input type="password" name="password" id="password" placeholder="Password" required>
+				<input type="submit" name="submit" value="Sign Up">
+        		</form>
+		</div>
+	</div>
+</body>
+</html>
