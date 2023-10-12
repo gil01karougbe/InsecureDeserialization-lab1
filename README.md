@@ -33,7 +33,10 @@ Notes airea!!!
 ### Vulnerability
 The cookie sent to the user a serialized object using the node package node-serialize and is user-controllable this means that the application should not trust this input for deserialization.
 here no checks are made before the deserialization process so if we send a malicious object the application will trust it and go to the deserialization process.
+
 with all of that being said let's go to the exploitation step!!!
+
+
 NB:
 Many deserialization-based attacks are completed before deserialization is finished. This means that the deserialization process itself can initiate an attack, even if the website's own functionality does not directly interact with the malicious object.
 ### Exploitation
