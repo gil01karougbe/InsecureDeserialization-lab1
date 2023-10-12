@@ -24,6 +24,9 @@ Login!!!!
 ```
 user: admin
 password: admin
+OR
+user: user
+password: password123
 ```
 ![image](https://github.com/gil01karougbe/InsecureDeserialization-lab1/assets/98090770/6a8545df-98ad-4872-9138-9430b2cffc16)
 Notes airea!!!
@@ -38,7 +41,7 @@ with all of that being said let's go to the exploitation step!!!
 
 
 NB:
-Many deserialization-based attacks are completed before deserialization is finished. This means that the deserialization process itself can initiate an attack, even if the website's own functionality does not directly interact with the malicious object.
+Many deserialization-based attacks are completed before the deserialization process is finished. This means that the deserialization process itself can initiate an attack, even if the website's own functionality does not directly interact with the malicious object.
 ### Exploitation
 Check the rce.js file to see how the malicious object is crafted!!!
 ![image](https://github.com/gil01karougbe/InsecureDeserialization-lab1/assets/98090770/bc1fb050-825d-4422-a408-b85a4c253593)
