@@ -54,8 +54,12 @@ Reverse shell!!!!
 
 ### Mitigations
 ```
-- Validate and sanitize incoming serialized data.
-- Only deserialize data from trusted sources(user input is not trusted data).
-- Use secure serialization formats or libraries.
-- Keep software and libraries up to date to patch known vulnerabilities
+- Generally speaking, deserialization of user input should be avoided unless absolutely necessary,
+- Validate and sanitize incoming serialized data,
+- Only deserialize data from trusted sources(user input is not trusted data),
+- Use secure serialization formats or libraries,
+- Keep software and libraries up to date to patch known vulnerabilities.
+NB:
+
+However, remember that any checks must take place before beginning the deserialization process. Otherwise, It's going to be exploitable.
 ```
